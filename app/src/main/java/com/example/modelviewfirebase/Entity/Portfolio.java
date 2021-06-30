@@ -3,23 +3,23 @@ package com.example.modelviewfirebase.Entity;
 import java.io.Serializable;
 
 public class Portfolio implements Serializable {
-    private Student student;
+    private String student;
     private String title;
     private String description;
 
     public Portfolio() {}
 
-    public Portfolio(Student student, String title, String description) {
+    public Portfolio(String student, String title, String description) {
         setStudent(student);
         setTitle(title);
         setDescription(description);
     }
 
-    public Student getStudent() {
+    public String getStudent() {
         return student;
     }
 
-    public void setStudent(Student student) {
+    public void setStudent(String student) {
         this.student = student;
     }
 
@@ -38,4 +38,5 @@ public class Portfolio implements Serializable {
     public void setDescription(String description) {
         this.description = description;
     }
+
 }
